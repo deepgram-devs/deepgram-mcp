@@ -1,0 +1,18 @@
+[package]
+name = "deepgram-mcp"
+description = "This is a Model Context Protocol (MCP) server that enables the usage of Deepgram voice APIs."
+version = "0.1.1"
+edition = "2021"
+
+[[bin]]
+name = "deepgram-mcp"
+path = "src/main.rs"
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+reqwest = { version = "0.12.23", features = ["json"] }
+uuid = { version = "1.0", features = ["v4"] }
+anyhow = "1.0"
+base64 = "0.22"
